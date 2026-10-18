@@ -1,0 +1,24 @@
+{
+  "name": "@metriflow/worker",
+  "version": "1.0.0",
+  "description": "MetriFlow Background Asynchronous Queue Worker",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@metriflow/contracts": "*",
+    "bullmq": "^5.21.2",
+    "dotenv": "^16.4.5",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
